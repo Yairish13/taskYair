@@ -1,5 +1,5 @@
 import './Product.css';
-import React from 'react';
+import React, { memo } from 'react';
 import Button from '../Button/Button';
 
 function Product({ product, handleProduct, btnTxt }) {
@@ -15,4 +15,4 @@ function Product({ product, handleProduct, btnTxt }) {
     );
 }
 
-export default Product;
+export default memo(Product);
