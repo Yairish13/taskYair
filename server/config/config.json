@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "Yt123456!",
+    "database": "db",
+    "host": "database-2.chu8kgiomhu1.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "port": 3306,
+    "migrations-path": "../migrations",  
+    "seeders-path": "../seeders",
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "test": {
+    "username": "test_user",
+    "password": "test_password",
+    "database": "test_db",
+    "host": "test_host",
+    "dialect": "mysql",
+    "port": 3306
+  },
+  "production": {
+    "username": "prod_user",
+    "password": "prod_password",
+    "database": "prod_db",
+    "host": "prod_host",
+    "dialect": "mysql",
+    "migrationStorageTableName": "sequelize_meta"
+  }
+}

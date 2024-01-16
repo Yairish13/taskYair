@@ -1,0 +1,141 @@
+'use strict';
+
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    console.log('seeders!!!!!!!!!');
+    await queryInterface.bulkInsert('Products', [
+      {
+        title: 'בצל',
+        description: 'בצל סגול',
+        price: 7.99,
+        categoryCode: '1',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'אפרסק',
+        description: 'אפרסק מהרי האינדים',
+        price: 9.99,
+        categoryCode: '1',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'ענבים',
+        description: 'ענבי ללי',
+        price: 14.99,
+        categoryCode: '1',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'תפוח',
+        description: 'תפוח ירוק',
+        price: 4.99,
+        categoryCode: '1',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'שמפו',
+        description:"שמפו לשיער חלק",
+        price: 14.99,
+        categoryCode: '2',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'מרכך',
+        description:"מרכך לשיער לא חלק",
+        price: 14.99,
+        categoryCode: '2',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'סבון גוף',
+        description: 'סבון עשיר בארומה',
+        price: 23.99,
+        categoryCode: '2',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'מאפין',
+        description:"מאפין תוצרת בית",
+        price: 5.99,
+        categoryCode: '3',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'בורקס',
+        description:"בורקס עבודת יד",
+        price: 2.99,
+        categoryCode: '3',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'עוגה',
+        description: 'עוגת יום הולדת',
+        price: 49.99,
+        categoryCode: '3',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'סופגניה',
+        description: 'סופגניה בטעמים',
+        price: 3.99,
+        categoryCode: '3',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'אנטריקוט',
+        description: ' אנטריקוט',
+        price: 149.99,
+        categoryCode: '4',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'סלמון',
+        description: 'סלמון טרי',
+        price: 55.99,
+        categoryCode: '4',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'אמנון',
+        description: 'אמנון קפוא',
+        price: 15.99,
+        categoryCode: '4',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'המבורגר',
+        description: 'המבורגר טבעוני',
+        price: 29.99,
+        categoryCode: '4',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        title: 'קציצות',
+        description: 'קציצות ברסק',
+        price: 33.99,
+        categoryCode: '4',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+    ]);
+  },
+
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkDelete('Products', null, {});
+  },
+};
